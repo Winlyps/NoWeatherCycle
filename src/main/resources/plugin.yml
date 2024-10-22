@@ -1,0 +1,5 @@
+name: NoWeatherCycle
+version: '1.0.0'
+main: winlyps.noWeatherCycle.NoWeatherCycle
+api-version: '1.20'
+authors: [ Winlyps ]
