@@ -14,6 +14,9 @@ class NoWeatherCycle : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoWeatherCycle plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("doWeatherCycle", "true")
+            logger.info("NoWeatherCycle plugin has been disabled.")
+        }
     }
 }
